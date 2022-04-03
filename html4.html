@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML,CSS">
+    <meta name="keywords" content="HTML tags">
+    <meta name="author" content="Ishrat Bushra">
+
+    <link rel="stylesheet" type="text/css" href="css/html4.css">
+    <title>Index</title>
+    
+</head>
+
+<body>
+   <div class="c3">
+    <header>
+        <h5>Using header semantic</h5>
+      </header>
+   </div>
+    
+    <h1>The wbr element</h1>
+    <p>This is a
+        veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.
+    </p>
+    <br>
+    <h1>The var element</h1>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is
+        the vertical height.</p>
+    <br>
+    <h1>The template Element</h1>
+    <p>Click button below to show hidden content </p>
+
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+        <h2>Cat</h2>
+        <img src="images/cat1.jpg">
+    </template>
+    <br>
+    <svg id="s1" width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" />
+    </svg>
+    <br>
+    <p>using superscript,subscript H<sub>2</sub> and b<sup>2</sup> </p>
+    <br>
+    <h1>The s element</h1>
+    <p><s>Only 50 tickets left!</s></p>
+    <p>SOLD OUT!</p>
+    <script>
+        function showContent() {
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+<br>
+<h2 id="hh1">using inline display property</h2>
+<i>i tag is an inline element using inline element</i>
+<b>b tag is an inline element using inline element</b>
+<h2 id="hh2">using block display property</h2>
+<p>using p tag Hello World</p>
+<div>using div tag Hello World</div>
+
+<h3 id="hh3">displaying h3 as inline-block element</h3>
+<p>using p tag after h3 inline-block display</p>
+<h4 id="hh3">displaying h4 as inline-block element</h4>
+<b >using b tag after h3 inline-block display</b>
+<br>
+<h2>using margin </h2>
+<div class="dd1" >
+     <p id="p1" >using 2 element margin</p>
+     <table id="tab1">
+         <tr>
+             <td id="td1">
+                table with margin and padding using 4 element shorthand system (clockwise )
+             </td>
+         </tr>
+     </table>
+</div>
+<br>
+<h1>box model concept</h1>
+ <div class="box">
+    <p id="boxp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dolore enim magnam ut possimus ad nemo nostrum sed vitae esse? Sapiente cum nisi accusantium pariatur doloremque! Esse illo vero a.</p>
+    </div>
+    
+<footer>
+    <div >
+        <p class="c1" >Project done by ISHRAT JABEN BUSHRA</p><br>
+        <div >
+            <p class="c2" > &copy; 2022 practiceexample.com : Dhaka,Bangladesh. All rights reserved </p>
+        </div>
+    </div>
+</div>
+  </footer>
+
+</body>
+
+</html>
